@@ -1,0 +1,64 @@
+24/05/02 22:42:54 INFO SparkContext: Running Spark version 3.5.0
+24/05/02 22:42:54 INFO SparkContext: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/02 22:42:54 INFO SparkContext: Java version 17.0.4
+24/05/02 22:42:54 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/02 22:42:55 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+24/05/02 22:42:55 INFO ResourceUtils: ==============================================================
+24/05/02 22:42:55 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/02 22:42:55 INFO ResourceUtils: ==============================================================
+24/05/02 22:42:55 INFO SparkContext: Submitted application: Liability Prediction
+24/05/02 22:42:55 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/05/02 22:42:55 INFO ResourceProfile: Limiting resource is cpu
+24/05/02 22:42:55 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/05/02 22:42:55 INFO SecurityManager: Changing view acls to: acq22vk
+24/05/02 22:42:55 INFO SecurityManager: Changing modify acls to: acq22vk
+24/05/02 22:42:55 INFO SecurityManager: Changing view acls groups to: 
+24/05/02 22:42:55 INFO SecurityManager: Changing modify acls groups to: 
+24/05/02 22:42:55 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: acq22vk; groups with view permissions: EMPTY; users with modify permissions: acq22vk; groups with modify permissions: EMPTY
+24/05/02 22:42:56 INFO Utils: Successfully started service 'sparkDriver' on port 44312.
+24/05/02 22:42:56 INFO SparkEnv: Registering MapOutputTracker
+24/05/02 22:42:56 INFO SparkEnv: Registering BlockManagerMaster
+24/05/02 22:42:56 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/05/02 22:42:56 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/05/02 22:42:56 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/05/02 22:42:56 INFO DiskBlockManager: Created local directory at /tmp/job.2549766/blockmgr-18596b46-4323-4079-8602-efffe19a907e
+24/05/02 22:42:56 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+24/05/02 22:42:56 INFO SparkEnv: Registering OutputCommitCoordinator
+24/05/02 22:42:57 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/05/02 22:42:57 INFO Utils: Successfully started service 'SparkUI' on port 4040.
+24/05/02 22:42:57 INFO Executor: Starting executor ID driver on host node143.pri.stanage.alces.network
+24/05/02 22:42:57 INFO Executor: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/02 22:42:57 INFO Executor: Java version 17.0.4
+24/05/02 22:42:57 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/05/02 22:42:57 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@393f5031 for default.
+24/05/02 22:42:57 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 39448.
+24/05/02 22:42:57 INFO NettyBlockTransferService: Server created on node143.pri.stanage.alces.network:39448
+24/05/02 22:42:57 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/05/02 22:42:57 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, node143.pri.stanage.alces.network, 39448, None)
+24/05/02 22:42:57 INFO BlockManagerMasterEndpoint: Registering block manager node143.pri.stanage.alces.network:39448 with 413.9 MiB RAM, BlockManagerId(driver, node143.pri.stanage.alces.network, 39448, None)
+24/05/02 22:42:57 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, node143.pri.stanage.alces.network, 39448, None)
+24/05/02 22:42:57 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, node143.pri.stanage.alces.network, 39448, None)
+24/05/02 22:43:29 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+24/05/02 22:43:29 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+24/05/02 22:43:29 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.lapack.JNILAPACK
+24/05/02 22:52:14 WARN SparkStringUtils: Truncated the string representation of a plan since it was too large. This behavior can be adjusted by setting 'spark.sql.debug.maxToStringFields'.
+----------------------------------------------------------------------------------------------------
+ Poisson Model RMSE : 0.35502357138965474
+ 
+ AUC for Logistic Regression with L1 regularization  : 0.6273895989901163
+ 
+ AUC for Logistic Regression with L2 regularization  : 0.6252581309909381
+ 
+ Accuracy for Logistic Regression with L1 regularization  : 0.8894743404434141
+ 
+ Accuracy for Logistic Regression with L2 regularization  : 0.8894743404434141
+ 
+Poisson model coefficients : 
+  [-0.009445527362993474,0.1476344413146253,0.14052741962042567,-0.1034294626134693,-0.04404558196094109,0.09043521983622145,0.002459359465194477,0.038199620789245145,-0.07012049043108445,0.06270792237747723,-0.06946568690687364,-0.19285537693899152,-0.014369064738424373,-0.11283716451571503,0.16931147686092418,0.15546974470551522,0.23753776779405508,0.03130703273675304,-0.05756164469587958,-0.08303806029475118,0.16901038912273794,0.2616141614799193,0.07497563407711375,-0.2918810595144914,-0.11348853064421359,-0.08977248499207223,-0.00282364195792896,-0.02120431916120675,0.008000077408618723,-0.28149950897724607,-0.021415146658473265,-0.1852874126072342,-0.18844506300536257,0.03731675193994222,0.09000806915955467,0.014031137874630251,0.40061627915533116,0.9745148781393395,-0.01470466545152135,-0.034866132496232924,0.009505878852498787,0.022737841881079007,4.351048034338072e-06]
+ 
+ L1 regularized logistic regression model coefficients : 
+  (43,[2,11,15,16,21,23,29,36,37,39,40,41],[0.013916823111353671,-0.003364646842546326,0.07471347432774822,0.02116966891291571,0.05649955569353726,-0.1733797942421078,-0.06131311070732126,0.3599263855019565,0.945632822193937,-0.023727617662045987,0.005104772126746306,0.01906288990871531])
+ 
+ L2 regularized logistic regression model coefficients : 
+  [-0.02689791296603449,0.10936669044320571,0.1589101626324023,-0.11716160620873925,-0.08119499093372941,0.07255151563919683,-0.07006861318857027,0.010111034720104462,-0.07953049448558903,0.04886233904834044,-0.16091103880099167,-0.3030171228239266,-0.11019441755139693,-0.23475649565916468,0.20830511899177595,0.1492768183329723,0.21155540581797455,0.028868640310172826,-0.05741694880978968,-0.1608404755993195,0.1870872947325398,0.2643152415380778,-0.16571682600987891,-0.44065341260929575,-0.11503220757124356,-0.09331632445671009,0.01811545794744991,-0.0011788045039684142,-0.08389013113543904,-0.5532828889199498,-0.0205359209041944,-0.37649528748848976,-0.5237150566553951,0.11726536348351045,0.10888727305952141,0.06765035560515427,0.7388100579003084,1.0340951200998425,-0.012488900355655396,-0.034695545746776725,0.008642673916662848,0.022298773587766874,1.95598205593735e-06]
+----------------------------------------------------------------------------------------------------

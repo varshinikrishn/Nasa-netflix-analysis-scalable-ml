@@ -1,0 +1,213 @@
+24/05/03 11:54:28 INFO SparkContext: Running Spark version 3.5.0
+24/05/03 11:54:28 INFO SparkContext: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/03 11:54:28 INFO SparkContext: Java version 17.0.4
+24/05/03 11:54:28 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+24/05/03 11:54:28 WARN SparkConf: Note that spark.local.dir will be overridden by the value set by the cluster manager (via SPARK_LOCAL_DIRS in mesos/standalone/kubernetes and LOCAL_DIRS in YARN).
+24/05/03 11:54:28 INFO ResourceUtils: ==============================================================
+24/05/03 11:54:28 INFO ResourceUtils: No custom resources configured for spark.driver.
+24/05/03 11:54:28 INFO ResourceUtils: ==============================================================
+24/05/03 11:54:28 INFO SparkContext: Submitted application: Movie Recommendation
+24/05/03 11:54:28 INFO ResourceProfile: Default ResourceProfile created, executor resources: Map(cores -> name: cores, amount: 1, script: , vendor: , memory -> name: memory, amount: 1024, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+24/05/03 11:54:28 INFO ResourceProfile: Limiting resource is cpu
+24/05/03 11:54:28 INFO ResourceProfileManager: Added ResourceProfile id: 0
+24/05/03 11:54:28 INFO SecurityManager: Changing view acls to: acq22vk
+24/05/03 11:54:28 INFO SecurityManager: Changing modify acls to: acq22vk
+24/05/03 11:54:28 INFO SecurityManager: Changing view acls groups to: 
+24/05/03 11:54:28 INFO SecurityManager: Changing modify acls groups to: 
+24/05/03 11:54:28 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: acq22vk; groups with view permissions: EMPTY; users with modify permissions: acq22vk; groups with modify permissions: EMPTY
+24/05/03 11:54:29 INFO Utils: Successfully started service 'sparkDriver' on port 36673.
+24/05/03 11:54:29 INFO SparkEnv: Registering MapOutputTracker
+24/05/03 11:54:29 INFO SparkEnv: Registering BlockManagerMaster
+24/05/03 11:54:29 INFO BlockManagerMasterEndpoint: Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+24/05/03 11:54:29 INFO BlockManagerMasterEndpoint: BlockManagerMasterEndpoint up
+24/05/03 11:54:29 INFO SparkEnv: Registering BlockManagerMasterHeartbeat
+24/05/03 11:54:29 INFO DiskBlockManager: Created local directory at /tmp/job.2558155/blockmgr-6e579f57-3cf7-4566-b518-2975bb4d79e9
+24/05/03 11:54:29 INFO MemoryStore: MemoryStore started with capacity 413.9 MiB
+24/05/03 11:54:29 INFO SparkEnv: Registering OutputCommitCoordinator
+24/05/03 11:54:29 INFO JettyUtils: Start Jetty 0.0.0.0:4040 for SparkUI
+24/05/03 11:54:29 WARN Utils: Service 'SparkUI' could not bind on port 4040. Attempting port 4041.
+24/05/03 11:54:29 WARN Utils: Service 'SparkUI' could not bind on port 4041. Attempting port 4042.
+24/05/03 11:54:29 INFO Utils: Successfully started service 'SparkUI' on port 4042.
+24/05/03 11:54:29 INFO Executor: Starting executor ID driver on host node141.pri.stanage.alces.network
+24/05/03 11:54:29 INFO Executor: OS info Linux, 3.10.0-1160.105.1.el7.x86_64, amd64
+24/05/03 11:54:29 INFO Executor: Java version 17.0.4
+24/05/03 11:54:29 INFO Executor: Starting executor with user classpath (userClassPathFirst = false): ''
+24/05/03 11:54:29 INFO Executor: Created or updated repl class loader org.apache.spark.util.MutableURLClassLoader@59fe9792 for default.
+24/05/03 11:54:29 INFO Utils: Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 33807.
+24/05/03 11:54:29 INFO NettyBlockTransferService: Server created on node141.pri.stanage.alces.network:33807
+24/05/03 11:54:29 INFO BlockManager: Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+24/05/03 11:54:29 INFO BlockManagerMaster: Registering BlockManager BlockManagerId(driver, node141.pri.stanage.alces.network, 33807, None)
+24/05/03 11:54:29 INFO BlockManagerMasterEndpoint: Registering block manager node141.pri.stanage.alces.network:33807 with 413.9 MiB RAM, BlockManagerId(driver, node141.pri.stanage.alces.network, 33807, None)
+24/05/03 11:54:29 INFO BlockManagerMaster: Registered BlockManager BlockManagerId(driver, node141.pri.stanage.alces.network, 33807, None)
+24/05/03 11:54:29 INFO BlockManager: Initialized BlockManager: BlockManagerId(driver, node141.pri.stanage.alces.network, 33807, None)
+----------------------------------------------------------------------------------------------------
+24/05/03 11:54:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:54:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:54:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:31 WARN MemoryStore: Not enough space to cache rdd_24_1 in memory! (computed 57.9 MiB so far)
+24/05/03 11:56:31 WARN BlockManager: Persisting block rdd_24_1 to disk instead.
+24/05/03 11:56:32 WARN MemoryStore: Not enough space to cache rdd_24_2 in memory! (computed 51.0 MiB so far)
+24/05/03 11:56:32 WARN BlockManager: Persisting block rdd_24_2 to disk instead.
+24/05/03 11:56:37 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:37 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
++------+-------+------+---------+---------------------+
+|userId|movieId|rating|timestamp|percent_rank         |
++------+-------+------+---------+---------------------+
+|28507 |1176   |4.0   |789652004|0.0                  |
+|131160|21     |3.0   |789652009|4.999934500858039E-8 |
+|131160|47     |5.0   |789652009|4.999934500858039E-8 |
+|131160|1079   |3.0   |789652009|4.999934500858039E-8 |
+|20821 |32     |5.0   |822873600|1.9999738003432155E-7|
+|108467|10     |3.0   |822873600|1.9999738003432155E-7|
+|53434 |19     |1.0   |822873600|1.9999738003432155E-7|
+|108467|11     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |2      |4.0   |822873600|1.9999738003432155E-7|
+|108467|57     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |7      |5.0   |822873600|1.9999738003432155E-7|
+|134445|10     |3.0   |822873600|1.9999738003432155E-7|
+|85252 |10     |5.0   |822873600|1.9999738003432155E-7|
+|134445|11     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |11     |5.0   |822873600|1.9999738003432155E-7|
+|134445|21     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |12     |1.0   |822873600|1.9999738003432155E-7|
+|134445|45     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |17     |5.0   |822873600|1.9999738003432155E-7|
+|134445|58     |5.0   |822873600|1.9999738003432155E-7|
+|85252 |19     |3.0   |822873600|1.9999738003432155E-7|
+|85252 |21     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |22     |4.0   |822873600|1.9999738003432155E-7|
+|85252 |24     |3.0   |822873600|1.9999738003432155E-7|
+|85252 |32     |4.0   |822873600|1.9999738003432155E-7|
++------+-------+------+---------+---------------------+
+only showing top 25 rows
+
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:55 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:59 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:56:59 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:57:39 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.JNIBLAS
+24/05/03 11:57:39 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.blas.VectorBLAS
+24/05/03 11:57:40 WARN InstanceBuilder: Failed to load implementation from:dev.ludovic.netlib.lapack.JNILAPACK
+24/05/03 11:58:09 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:58:09 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:58:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:58:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:59:07 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:59:07 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:59:12 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 11:59:12 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:00:36 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:00:36 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:00:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:00:41 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:01:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:01:22 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:01:26 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:01:26 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:01:59 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:01:59 WARN BlockManager: Persisting block rdd_647_0 to disk instead.
+24/05/03 12:02:04 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:02:04 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:02:05 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:02:09 WARN MemoryStore: Not enough space to cache rdd_664_0 in memory! (computed 60.9 MiB so far)
+24/05/03 12:02:09 WARN BlockManager: Persisting block rdd_664_0 to disk instead.
+24/05/03 12:03:27 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:03:27 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:03:31 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:03:31 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:08:28 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:08:28 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:08:32 WARN MemoryStore: Not enough space to cache rdd_1692_0 in memory! (computed 31.2 MiB so far)
+24/05/03 12:08:32 WARN BlockManager: Persisting block rdd_1692_0 to disk instead.
+ALS Metrics Table:
+  Split   Setting      RMSE       MSE       MAE
+0   40%  Setting1  0.806502  0.650445  0.621665
+1   60%  Setting1  0.776725  0.603301  0.591055
+2   80%  Setting1  0.795834  0.633351  0.602762
+3   40%  Setting2  0.840350  0.706189  0.636782
+4   60%  Setting2  0.795364  0.632604  0.597969
+5   80%  Setting2  0.831949  0.692139  0.619083
+----------------------------------------------------------------------------------------------------
+24/05/03 12:15:32 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:15:33 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:15:37 WARN MemoryStore: Not enough space to cache rdd_2868_0 in memory! (computed 31.2 MiB so far)
+24/05/03 12:15:37 WARN BlockManager: Persisting block rdd_2868_0 to disk instead.
+Top 5 cluster sizes for the 40% training segment:
+[4873, 4176, 3816, 3587, 3418]
+Top 5 cluster sizes for the 60% training segment:
+[6481, 5329, 4494, 4394, 4211]
+Top 5 cluster sizes for the 80% training segment:
+[9190, 6499, 5842, 5636, 5512]
+Cluster Sizes Table:
+              40%   60%   80%
+1st Largest  4873  6481  9190
+2nd Largest  4176  5329  6499
+3rd Largest  3816  4494  5842
+4th Largest  3587  4394  5636
+5th Largest  3418  4211  5512
+/users/acq22vk/com6012/ScalableML/Code/Q4_code.py:197: FutureWarning: Series.__getitem__ treating keys as positions is deprecated. In a future version, integer keys will always be treated as labels (consistent with DataFrame behavior). To access a value by position, use `ser.iloc[pos]`
+  cluster_data = [clusterSize [split][i] for split in splits]
+24/05/03 12:19:08 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+24/05/03 12:19:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:19:13 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+Top Genres from High Rated Movies (40% Split):
+Drama        1639
+Comedy       1212
+Thriller      629
+Romance       628
+Action        513
+Adventure     405
+Crime         373
+Sci-Fi        275
+Children      258
+Horror        229
+dtype: int64
+24/05/03 12:19:15 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:19:15 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+Top Genres from High Rated Movies (60% Split):
+Drama        3888
+Comedy       2764
+Romance      1352
+Thriller     1297
+Action       1074
+Crime         879
+Adventure     789
+Horror        692
+Sci-Fi        582
+Children      433
+dtype: int64
+24/05/03 12:19:17 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:19:17 WARN WindowExec: No Partition Defined for Window operation! Moving all data to a single partition, this can cause serious performance degradation.
+24/05/03 12:19:18 WARN MemoryStore: Not enough space to cache rdd_647_0 in memory! (computed 301.1 MiB so far)
+Top Genres from High Rated Movies (80% Split):
+Drama        5242
+Comedy       3509
+Romance      1770
+Thriller     1746
+Action       1432
+Crime        1198
+Adventure    1044
+Horror        929
+Sci-Fi        759
+Fantasy       580
+dtype: int64
